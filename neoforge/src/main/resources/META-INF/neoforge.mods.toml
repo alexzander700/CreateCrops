@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+#issueTrackerURL = ""
+license = "All Rights Reserved"
+
+[[mods]]
+modId = "create_crops"
+version = "${version}"
+displayName = "Create Crops"
+authors = "alexzander700"
+description = '''
+Create: Crops is a library mod meant to add the Crops needed for other mods of mine, such as Create: Italian Industries. If Create: Farming Essentials is loaded, you can use the Trellis with crops compatible with it.
+'''
+#logoFile = ""
+
+[[dependencies.create_crops]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.create_crops]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.create_crops]]
+modId = "architectury"
+type = "required"
+versionRange = "[13.0.11,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "create_crops.mixins.json"
