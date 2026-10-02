@@ -1,0 +1,6 @@
+{
+  "values": {
+    "create_crops:tomato": { "chance": 0.65 },
+    "create_crops:tomato_seeds": { "chance": 0.3 }
+  }
+}

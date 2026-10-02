@@ -1,0 +1,12 @@
+{
+  "tomato_splat": {
+    "subtitle": "subtitles.create_crops.tomato_splat",
+    "sounds": [
+      {
+        "name": "minecraft:entity.magma_cube.squish",
+        "type": "event",
+        "pitch": 1.25
+      }
+    ]
+  }
+}

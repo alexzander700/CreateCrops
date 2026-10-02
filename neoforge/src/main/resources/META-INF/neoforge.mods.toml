@@ -34,5 +34,22 @@ versionRange = "[13.0.11,)"
 ordering = "AFTER"
 side = "BOTH"
 
+# Optional: lets tomatoes be planted in the Trellis. "[0,)" because a "1.0-SNAPSHOT" version
+# sorts *below* 1.0 and would be rejected by "[1.0,)".
+[[dependencies.create_crops]]
+modId = "create_farming_essentials"
+type = "optional"
+versionRange = "[0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+# Optional: tomatoes can be fired from Create's Potato Cannon.
+[[dependencies.create_crops]]
+modId = "create"
+type = "optional"
+versionRange = "[6.0.10,)"
+ordering = "AFTER"
+side = "BOTH"
+
 [[mixins]]
 config = "create_crops.mixins.json"
